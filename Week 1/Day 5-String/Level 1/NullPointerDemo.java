@@ -2,7 +2,7 @@
 public class NullPointerDemo {
     public static void generateException() {
         String text = null;
-        int length = text.length();
+        int length = text.length(); 
     }
     public static void handleException() {
         String text = null;
