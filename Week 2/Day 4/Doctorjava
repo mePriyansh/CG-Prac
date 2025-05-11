@@ -1,0 +1,26 @@
+import java.util.*;
+class Doctor {
+String name;
+Doctor(String name) {
+this.name = name;
+}
+void consult(Patient p) {
+System.out.println(name + " consults " + p.name);
+}
+}
+class Patient {
+String name;
+Patient(String name) {
+this.name = name;
+}
+}
+class Hospital {
+List<Doctor> doctors = new ArrayList<>();
+List<Patient> patients = new ArrayList<>();
+void addDoctor(Doctor d) {
+doctors.add(d);
+}
+void addPatient(Patient p) {
+patients.add(p);
+}
+}
